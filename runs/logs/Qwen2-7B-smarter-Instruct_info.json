@@ -1,0 +1,37 @@
+{
+    "args_info": {
+        "model_name": "/home/infidea/yongsang/workspace/krx_benchmark/scripts/overfit-brothers/Qwen2-7B-smarter",
+        "tokenizer_name": "overfit-brothers/Qwen2-7B-smarter",
+        "data_config_path": "configs/datasets_custom2.yaml",
+        "hf_upload_name": "overfit-brothers/Qwen2-7B-smarter-Instruct",
+        "chat_mode": "alpaca",
+        "per_device_train_batch_size": 1,
+        "gradient_accumulation_steps": 64,
+        "max_seq_length": 2048,
+        "warmup_ratio": 0.1,
+        "num_train_epochs": 1,
+        "learning_rate": 1e-05,
+        "output_dir": "outputs",
+        "log_dir": "runs/logs",
+        "do_lora": false
+    },
+    "dataset_list": [
+        "overfit-brothers/table_predict",
+        "overfit-brothers/example",
+        "overfit-brothers/financial-mmlu-ko-cot",
+        "overfit-brothers/TESAT",
+        "overfit-brothers/MMMLU",
+        "overfit-brothers/krx-textbook",
+        "overfit-brothers/Finance_Sentiment",
+        "overfit-brothers/finance-agent",
+        "overfit-brothers/company_MCQA",
+        "overfit-brothers/finch_mcqa",
+        "amphora/krx-sample-instructions",
+        "BCCard/BCCard-Finance-Kor-QnA",
+        "overfit-brothers/financial-advisor",
+        "overfit-brothers/ConvFinQA-ko-cot",
+        "Cartinoe5930/web_text_synthetic_dataset_50k",
+        "Cartinoe5930/raw_text_synthetic_dataset_50k",
+        "HAERAE-HUB/qarv-instruct-ko"
+    ]
+}

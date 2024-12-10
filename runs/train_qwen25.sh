@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0 python3 scripts/train_alpaca.py \
+    --model_name "Qwen/Qwen2.5-7B-Instruct" \
+    --tokenizer_name "Qwen/Qwen2.5-7B-Instruct" \
+    --hf_upload_name "overfit-brothers/Qwen2.5-7B-Instruct-YS-FINAL2" \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 64 \
+    --max_seq_len 2048 \
+    --warmup_ratio 0.05 \
+    --num_train_epochs 8 \
+    --learning_rate 5e-6 \
+    --output_dir "outputs" \
+    --data_config_path "configs/datasets_custom1.yaml"

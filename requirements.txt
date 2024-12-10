@@ -1,0 +1,6 @@
+bitsandbytes==0.44.1
+datasets==3.1.0
+liger_kernel==0.4.2
+transformers==4.46.3
+trl==0.12.1
+unsloth @ git+https://github.com/unslothai/unsloth.git@228b3cf46ec4401b81194267ed0091eb62a56c6b

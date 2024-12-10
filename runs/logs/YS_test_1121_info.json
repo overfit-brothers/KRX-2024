@@ -1,0 +1,35 @@
+{
+    "args_info": {
+        "model_name": "unsloth/gemma-2-9b-it",
+        "tokenizer_name": "unsloth/gemma-2-9b-it",
+        "data_config_path": "configs/final_datasets3.yaml",
+        "hf_upload_name": "overfit-brothers/YS_test_1121",
+        "chat_mode": "template",
+        "per_device_train_batch_size": 1,
+        "gradient_accumulation_steps": 64,
+        "max_seq_length": 2048,
+        "warmup_ratio": 0.01,
+        "num_train_epochs": 5,
+        "learning_rate": 1e-05,
+        "output_dir": "outputs",
+        "log_dir": "runs/logs",
+        "do_lora": false
+    },
+    "MCQA_list": [
+        "overfit-brothers/example-mcqa",
+        "overfit-brothers/TESAT",
+        "overfit-brothers/krx-textbook",
+        "overfit-brothers/finch_mcqa",
+        "overfit-brothers/mmmlu_revised_augmented_cot",
+        "overfit-brothers/accounting_rule_MCQA",
+        "overfit-brothers/financial-market-law-mcqa"
+    ],
+    "instruct_list": [
+        "overfit-brothers/example-it",
+        "overfit-brothers/ConvFinQA-ko-cot",
+        "Cartinoe5930/web_text_synthetic_dataset_50k",
+        "Cartinoe5930/raw_text_synthetic_dataset_50k",
+        "overfit-brothers/financial_judgement_instructions",
+        "overfit-brothers/financial-market-law-it"
+    ]
+}

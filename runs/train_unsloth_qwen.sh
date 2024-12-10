@@ -1,0 +1,13 @@
+python3 scripts/train_unsloth.py \
+    --model_name "/home/infidea/yongsang/workspace/krx_benchmark/scripts/overfit-brothers/Qwen2-7B-smarter" \
+    --tokenizer_name "overfit-brothers/Qwen2-7B-smarter" \
+    --hf_upload_name "overfit-brothers/Qwen2-7B-smarter-Instruct" \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 64 \
+    --max_seq_len 2048 \
+    --warmup_ratio 0.1 \
+    --num_train_epochs 1 \
+    --learning_rate 1e-5 \
+    --output_dir "outputs" \
+    --chat_mode "alpaca" \
+    --data_config_path "configs/datasets_custom2.yaml" # lora 할거면 밑에 --do_lora 추가

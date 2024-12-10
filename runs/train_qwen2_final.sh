@@ -1,0 +1,12 @@
+python3 scripts/train_unsloth_forFinal.py \
+    --model_name "Qwen/Qwen2-7B" \
+    --tokenizer_name "Qwen/Qwen2-7B" \
+    --hf_upload_name "overfit-brothers/Qwen2-forFINAL-test" \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 64 \
+    --max_seq_len 2048 \
+    --warmup_ratio 0.01 \
+    --num_train_epochs 5 \
+    --learning_rate 1e-5 \
+    --output_dir "outputs" \
+    --data_config_path "configs/final_datasets1.yaml"

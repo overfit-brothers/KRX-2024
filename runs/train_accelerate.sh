@@ -1,0 +1,11 @@
+accelerate launch scripts/train_sft.py \
+    --model_name "google/gemma-2-9b-it" \
+    --tokenizer_name "google/gemma-2-9b-it" \
+    --hf_upload_name "overfit-brothers/gemma-2-9b-it-test" \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 64 \
+    --max_seq_len 1024 \
+    --warmup_ratio 0.05 \
+    --num_train_epochs 3 \
+    --learning_rate 1e-5 \
+    --output_dir "outputs"

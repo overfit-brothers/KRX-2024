@@ -1,0 +1,25 @@
+base_model:
+  model: overfit-brothers/gemma-1129-test123
+  parameters:
+    weight: 1
+  
+models:
+  - model: overfit-brothers/gemma-1129-test123
+    parameters:
+    weight: 1
+  - model: overfit-brothers/gemma-1130
+    parameters:
+      weight: 1
+  - model: overfit-brothers/hello_world02
+    parameters:
+      weight: 1
+  - model: overfit-brothers/gemma-2-9b-it-HJ-test-1204-5epoch-safety-p-m
+    parameters:
+      weight: 1
+      
+merge_method: model_stock
+dtype: bfloat16
+
+
+
+

@@ -1,0 +1,12 @@
+python3 scripts/train_forFinal.py \
+    --model_name "unsloth/gemma-2-9b-it" \
+    --tokenizer_name "unsloth/gemma-2-9b-it" \
+    --hf_upload_name "overfit-brothers/gemma-1130" \
+    --per_device_train_batch_size 1 \
+    --gradient_accumulation_steps 64 \
+    --max_seq_len 2048 \
+    --warmup_ratio 0.01 \
+    --num_train_epochs 5 \
+    --learning_rate 1e-5 \
+    --output_dir "outputs" \
+    --data_config_path "configs/dataset_1130.yaml"

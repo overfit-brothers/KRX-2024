@@ -1,0 +1,31 @@
+{
+    "args_info": {
+        "model_name": "/home/infidea/yongsang/workspace/krx_benchmark/outputs/gemma-2-9b-it-final-test1/checkpoint-2023",
+        "tokenizer_name": "unsloth/gemma-2-9b-it",
+        "data_config_path": "configs/final_datasets1.yaml",
+        "hf_upload_name": "overfit-brothers/gemma-2-9b-it-final-test1",
+        "chat_mode": "template",
+        "per_device_train_batch_size": 1,
+        "gradient_accumulation_steps": 64,
+        "max_seq_length": 2048,
+        "warmup_ratio": 0.01,
+        "num_train_epochs": 3,
+        "learning_rate": 1e-05,
+        "output_dir": "outputs",
+        "log_dir": "runs/logs",
+        "do_lora": false
+    },
+    "MCQA_list": [
+        "overfit-brothers/example",
+        "overfit-brothers/TESAT",
+        "overfit-brothers/krx-textbook",
+        "overfit-brothers/korean_econ_fin_exams_cot",
+        "overfit-brothers/mmmlu_revised_augmented_cot"
+    ],
+    "instruct_list": [
+        "overfit-brothers/ConvFinQA-ko-cot",
+        "Cartinoe5930/web_text_synthetic_dataset_50k",
+        "Cartinoe5930/raw_text_synthetic_dataset_50k",
+        "overfit-brothers/financial_judgement_instructions"
+    ]
+}
