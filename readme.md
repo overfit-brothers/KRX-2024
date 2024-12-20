@@ -8,6 +8,7 @@
 
 - 데이터셋 링크 [MCQA](https://huggingface.co/datasets/overfit-brothers/KRX-MCQA), [Instruction](https://huggingface.co/datasets/overfit-brothers/KRX-INST)
 
+- [모델 학습 방법 (롯데이노베이트 기술블로그)](https://slashpage.com/lotte-innovate-ai/4w67rj24jge6725yq8ep)
 ---
 
 ### 폴더 구성
